@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Sidebar from './Sidebar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Navbar';
@@ -12,6 +12,23 @@ function App() {
   function Toggle(){
     setToggle(!toggle);
   }
+
+  useEffect(() => {
+    const handleSize = () => {
+      if(window.innerWidth > 768){
+        setToggle(false);
+      }
+    }
+
+      window.addEventListener('resize', handleSize);
+
+      return () => {
+        window.removeEventListener('resize', handleSize);
+      }
+    
+
+  },[])
+
   return (
     <BrowserRouter>
     <div className='d-flex'>
