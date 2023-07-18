@@ -9,10 +9,10 @@ function Home() {
             <div className="row">
                 <div className='col-12 col-sm-6 col-md-4 col-lg-3 p-3 bg-light'>
                     <div className='d-flex justify-content-around p-4 align-items-center bg-white border border-secondary shadow-sm'>
-                        <i className='bi bi-currency-dollar fs-1 text-success'></i>
+                        <i className='bi bi-currency-rupee fs-1 text-success'></i>
                         <div>
                             <span>Sales</span>
-                            <h2>234</h2>
+                            <h2>7234</h2>
                         </div>
                     </div>
                 </div>
@@ -39,10 +39,10 @@ function Home() {
 
                 <div className='col-12 col-sm-6 col-md-4 col-lg-3 p-3 bg-light'>
                     <div className='d-flex justify-content-around p-4 align-items-center bg-white border border-secondary shadow-sm'>
-                        <i className='bi bi-truck fs-1 text-warning'></i>
+                        <i className='bi bi-people fs-1 text-warning'></i>
                         <div>
-                            <span>Delivery</span>
-                            <h2>40</h2>
+                            <span>Customers</span>
+                            <h2>27</h2>
                         </div>
                     </div>
                 </div>

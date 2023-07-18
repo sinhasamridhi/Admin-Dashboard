@@ -8,7 +8,7 @@ function Sidebar() {
         <div className= 'sidebar d-flex justify-content-between flex-column bg-danger text-white py-3 ps-3 pe-5 vh-100'>
             <div>
                 <span className='p-3 text-decoration-none text-white'>
-                    <i className='bi bi-code-slash fs-4 p-4'></i>
+                    <i className='bi bi-h-square fs-4 p-4'></i>
                     <span className='fs-4'> Honeywell</span>
                 </span>
                 <hr className='text-white mt-2' />
