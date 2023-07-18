@@ -12,7 +12,7 @@ function Home() {
                         <i className='bi bi-currency-rupee fs-1 text-success'></i>
                         <div>
                             <span>Sales</span>
-                            <h2>7234</h2>
+                            <h2>17234</h2>
                         </div>
                     </div>
                 </div>
@@ -21,8 +21,8 @@ function Home() {
                     <div className='d-flex justify-content-around p-4 align-items-center bg-white border border-secondary shadow-sm'>
                         <i className='bi bi-truck fs-1 text-primary'></i>
                         <div>
-                            <span>Delivery</span>
-                            <h2>40</h2>
+                            <span>Deliveries</span>
+                            <h2>5345</h2>
                         </div>
                     </div>
                 </div>
@@ -31,8 +31,8 @@ function Home() {
                     <div className='d-flex justify-content-around p-4 align-items-center bg-white border border-secondary shadow-sm'>
                         <i className='bi bi-graph-up-arrow fs-1 text-danger'></i>
                         <div>
-                            <span>Increase</span>
-                            <h2>10%</h2>
+                            <span>Gross Profits</span>
+                            <h2>13%</h2>
                         </div>
                     </div>
                 </div>
@@ -42,7 +42,7 @@ function Home() {
                         <i className='bi bi-people fs-1 text-warning'></i>
                         <div>
                             <span>Customers</span>
-                            <h2>27</h2>
+                            <h2>2700</h2>
                         </div>
                     </div>
                 </div>

@@ -1,14 +1,16 @@
 import React from 'react'
-
-function Navbar() {
+import 'bootstrap/dist/js/bootstrap.bundle.js';
+function Navbar({Toggle}) {
     return (
 
             < nav className="navbar navbar-expand-lg navbar-dark bg-danger" >
 
                 <div className="container-fluid">
 
-                    <a className="navbar-brand" href="#">Dashboard</a>
-
+                    <a className="navbar-brand d-none d-md-block" href="#">Dashboard</a>
+                    <a className="navbar-brand d-block d-md-none" onClick={Toggle} >
+                        <i className='bi bi-justify'></i>
+                    </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 
                         <span className="navbar-toggler-icon"></span>

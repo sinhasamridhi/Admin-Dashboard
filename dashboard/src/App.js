@@ -1,20 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Sidebar from './Sidebar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Navbar';
 import Home from './Home';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import User from './User';
+import Order from './Order';
 
 function App() {
+  const [toggle, setToggle] = useState(false);
+  function Toggle(){
+    setToggle(!toggle);
+  }
   return (
+    <BrowserRouter>
     <div className='d-flex'>
-      <div className='w-auto'>
+      <div className={toggle ? "d-none" : "w-auto position-fixed"} >
           <Sidebar />
       </div>
-      <div className = 'col'>
-         <Navbar/> 
-         <Home/>
+      <div className={toggle ? "d-none" : "invisible"} >
+          <Sidebar />
+      </div>
+      <div className = 'col overflow-auto'>
+      <Navbar Toggle={Toggle} />
+          <Routes>
+            <Route path='/' element={<><Home/></>}></Route>
+            <Route path='/users' element={<><User/></>}></Route>
+            <Route path='/orders' element={<><Order/></>}></Route>
+          </Routes>
       </div>
     </div>
+    </BrowserRouter>
   );
 }
 
