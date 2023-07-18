@@ -9,9 +9,9 @@ const data = {
     datasets:[
         {
             label: "My First Dataset",
-            backgroundColor: "rgb(255,99,132)",
-            borderColor: "rgb(25,99,132)",
-            data: [0,10,5,2,20,30,45],
+            //backgroundColor: "rgb(255,99,132)",
+            //borderColor: "rgb(25,99,132)",
+            data: [10,45,2,20,30,5],
 
         },
     ],
